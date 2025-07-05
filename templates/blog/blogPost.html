@@ -4,12 +4,19 @@
 
 {% block body %}
 <div class="container my-3">
-<div class="blog-post">
-        <h2 class="blog-post-title">{{post.title}}</h2>
-        <p class="blog-post-meta">{{post.timeStamp}} by <a href="#">{{post.author}}</a></p>
+  <div class="blog-post">
+    <h2 class="blog-post-title">{{post.title}}</h2>
+    <p class="blog-post-meta">{{post.timeStamp}} by <a href="#">{{post.author}}</a></p>
 
-        <p>{{post.content}}</p>
-        <hr>
-      </div>
-      </div>
- {% endblock %}
+    <p>{{post.content}}</p>
+    <hr>
+  </div>
+</div>
+<div class="container">
+  <h2>Comments</h2>
+  <div class="row my-3">
+    <div class="col-md-2 bg-success">Image Here</div>
+    <div class="col-md-10 bg-primary"><b>Rohan</b> says This blog is the best</div>
+  </div>
+</div>
+{% endblock %}
